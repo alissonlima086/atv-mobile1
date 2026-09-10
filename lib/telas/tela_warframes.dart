@@ -327,7 +327,7 @@ class _TelaWarframesState extends State<TelaWarframes> {
             children: [
               ResumoHeader(
                 totalGeral: _warframes.length,
-                totalPossuidos: _possuidos.length,
+                totalAdquirido: _possuidos.length,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),

@@ -25,14 +25,14 @@ void main() {
     await tester.pumpWidget(
       const MaterialApp(
         home: Scaffold(
-          body: ResumoHeader(totalGeral: 50, totalPossuidos: 5),
+          body: ResumoHeader(totalGeral: 50, totalAdquirido: 5),
         ),
       ),
     );
 
     expect(find.text('Total de Warframes'), findsOneWidget);
     expect(find.text('50'), findsOneWidget);
-    expect(find.text('Warframes Possuidos'), findsOneWidget);
+    expect(find.text('Warframes Adquiridos'), findsOneWidget);
     expect(find.text('5'), findsOneWidget);
     expect(find.byType(Divider), findsOneWidget);
     expect(find.byType(ListTile), findsNWidgets(2));
@@ -151,7 +151,7 @@ void main() {
       ),
     );
 
-    expect(find.text('Destaque Sorteado'), findsOneWidget);
+    expect(find.text('Warframe Sorteado'), findsOneWidget);
     expect(find.text('Excalibur'), findsOneWidget);
     expect(find.text('Espadachim classico.'), findsOneWidget);
     expect(find.text('Outro'), findsOneWidget);
